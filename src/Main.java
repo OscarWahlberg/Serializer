@@ -14,10 +14,10 @@ public class Main {
 		jsonWriter.Write(p, path);
 		
 		IJsonReader jsonReader = new JsonReader();
-		Person bajs = jsonReader.Read(path, Person.class);
+		Person person = jsonReader.Read(path, Person.class);
 		
 		Gson gson = new Gson();
-		System.out.println(gson.toJson(bajs));
+		System.out.println(gson.toJson(person));
 		
 	}
 }
